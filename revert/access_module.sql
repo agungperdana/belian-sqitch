@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE access_module;
+DROP TABLE belian.access_module;
 
 COMMIT;
