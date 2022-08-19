@@ -8,7 +8,7 @@ CREATE TABLE belian.access_role (
     name            TEXT NOT NULL,
     note          	TEXT DEFAULT NULL,
     enabled		    CHAR(5) DEFAULT 'N',
-    version		    BIGINT DEFAULT 0,
+    version		    BIGINT DEFAULT 1,
     CONSTRAINT access_role_id_pkey PRIMARY KEY(id)
 );
 
