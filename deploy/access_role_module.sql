@@ -8,11 +8,11 @@ CREATE TABLE belian.access_role_module (
     module_code     TEXT NOT NULL,
     module_name     TEXT DEFAULT NULL,
     module_group	TEXT DEFAULT NULL,
-    is_read         CHAR(1) DEFAULT 'N',
-    is_add          CHAR(1) DEFAULT 'N',
-    is_edit         CHAR(1) DEFAULT 'N',
-    is_delete       CHAR(1) DEFAULT 'N',
-    is_print        CHAR(1) DEFAULT 'N',
+    is_read         BOOLEAN DEFAULT false,
+    is_add          BOOLEAN DEFAULT false,
+    is_edit         BOOLEAN DEFAULT false,
+    is_delete       BOOLEAN DEFAULT false,
+    is_print        BOOLEAN DEFAULT false,
     version		    BIGINT DEFAULT 0,
     CONSTRAINT access_role_module_id_pkey PRIMARY KEY(id)
 );

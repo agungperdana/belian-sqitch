@@ -8,7 +8,7 @@ CREATE TABLE belian.access_module (
     name            TEXT NOT NULL,
     module_group	TEXT NOT NULL,
     note          	TEXT DEFAULT NULL,
-    enabled		    CHAR(5) DEFAULT 'N',
+    enabled		    BOOLEAN DEFAULT true,
     version		    BIGINT DEFAULT 1,
     CONSTRAINT access_module_id_pkey PRIMARY KEY(id)
 );
