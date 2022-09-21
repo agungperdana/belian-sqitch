@@ -2,7 +2,7 @@
 
 BEGIN;
 
-CREATE TABLE belian.access_role (
+CREATE TABLE belian_security.access_role (
     id              TEXT NOT NULL,
     code            TEXT NOT NULL,
     name            TEXT NOT NULL,
@@ -12,6 +12,6 @@ CREATE TABLE belian.access_role (
     CONSTRAINT access_role_id_pkey PRIMARY KEY(id)
 );
 
-GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE belian.access_role TO belian;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE belian_security.access_role TO belian;
 
 COMMIT;

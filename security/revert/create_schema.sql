@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP SCHEMA IF EXISTS belian;
+DROP SCHEMA IF EXISTS belian_security;
 
 COMMIT;

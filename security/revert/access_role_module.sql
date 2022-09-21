@@ -2,6 +2,6 @@
 
 BEGIN;
 
-DROP TABLE belian.access_role_module;
+DROP TABLE belian_security.access_role_module;
 
 COMMIT;
